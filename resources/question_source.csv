@@ -10,7 +10,7 @@ index,text,answerId
 9,"How would you like to spend your spare time ?",2
 10,"Do you have any hobbies ?",2
 11,"What do you do in your free time ?",2
-12,"When is your birthday ?",2
+12,"When is your birthday ?",3
 13,"What is your birf ?",3
 14,"Can I ask your birthday ?",3
 15,"What food do you like ?",4
@@ -21,3 +21,4 @@ index,text,answerId
 20,"Are there any foods that you dislike ?",5
 21,"Is there anything you prefer not to eat ?",5
 22,"Do you have any food that you don't like ?",5
+23,"what is your hobby ?",2
