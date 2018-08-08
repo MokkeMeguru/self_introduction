@@ -16,6 +16,7 @@ import static java.util.Collections.max;
 
 // notice: Id is started at "0".
 //         And this expect this dictionary has all words in all features.
+//         This model will be Crash. We must monitor so that the score does not become 0.
 
 public class SimpleWordSequenceLabelCSVParser implements BaseWordSequenceParser {
     private CSVRecordReader recordReader;
@@ -74,7 +75,6 @@ public class SimpleWordSequenceLabelCSVParser implements BaseWordSequenceParser 
             labelList.add(label);
         }
     }
-
 
     @Override
     public void save(File featureFile, File labelFile) throws FileNotFoundException {
