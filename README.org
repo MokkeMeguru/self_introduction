@@ -1,3 +1,4 @@
 * Model Figure
 
  [[./Diagram.png]]
+ [[./Train.png]]

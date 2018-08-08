@@ -27,7 +27,6 @@ import org.nd4j.linalg.lossfunctions.LossFunctions;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Map;
 
 public class SimpleSequence2VecModel {
     private DataSetIterator dataSetIterator;
@@ -98,7 +97,7 @@ public class SimpleSequence2VecModel {
     }
 
     public void train () {
-        for(int epoch = 1; epoch < 100; ++epoch) {
+        for(int epoch = 1; epoch < 300; ++epoch) {
             System.out.println("Epoch :" + epoch);
             this.dataSetIterator.reset();
             while(this.dataSetIterator.hasNext()) {
@@ -167,19 +166,22 @@ public class SimpleSequence2VecModel {
                 labelSize);
 
         // ------------------------------------
-        // System.out.println("Initialize model")
-        // model.setFeatureMaxLength(featureMaxLength);
-        // model.initNetWork();
-        // model.train();
-        // System.out.println("Initialize Finish")
+        System.out.println("Initialize model");
+        model.setFeatureMaxLength(featureMaxLength);
+        model.initNetWork();
+        System.out.println("Initialize Finish");
+        // -------------------------------------
+        System.out.println("Train model");
+        model.train();
+        System.out.println("Train Finish");
         // -------------------------------------------
         // System.out.println("Save Start");
         // model.saveModel();
         // System.out.println("Save Finish");
         // -------------------------------------------
-        System.out.println("load Model");
-        model.loadNetWork(new File("resources/ComputationGraph.zip"));
-        System.out.println("load Finish");
+        // System.out.println("load Model");
+        // model.loadNetWork(new File("resources/ComputationGraph.zip"));
+        // System.out.println("load Finish");
         // ------------------------------------------
         model.rawPredictData();
 

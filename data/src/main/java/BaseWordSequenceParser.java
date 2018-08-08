@@ -18,6 +18,7 @@ public interface BaseWordSequenceParser {
     int getFeatureMaxLength ();
     void setFeatureMaxLength (int featureMaxLength);
     int getLabelSize ();
+    void setLabelSize (int labelSize);
     int getDictSize();
     int getLabelMaxLength ();
     void setLabelMaxLength (int labelMaxLength);

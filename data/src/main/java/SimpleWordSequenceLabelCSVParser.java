@@ -27,6 +27,7 @@ public class SimpleWordSequenceLabelCSVParser implements BaseWordSequenceParser 
     int currentId;
 
     private int featureMaxLength;
+    private int labelSize;
 
     private List<List<String>> featuresList;
     private List<Integer> labelList;
@@ -125,6 +126,7 @@ public class SimpleWordSequenceLabelCSVParser implements BaseWordSequenceParser 
                 featureStream.print(wordIdDict.get(str));
             });
             labelStream.print(label);
+            labelList.add(label);
         }
         featureStream.flush();
         labelStream.flush();
@@ -157,7 +159,12 @@ public class SimpleWordSequenceLabelCSVParser implements BaseWordSequenceParser 
 
     @Override
     public int getLabelSize() {
-        return max(labelList);
+        return max(labelList) + 1;
+    }
+
+    @Override
+    public void setLabelSize(int labelSize) {
+        this.labelSize = labelSize;
     }
 
     @Override
