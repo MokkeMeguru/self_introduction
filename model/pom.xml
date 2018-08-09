@@ -12,9 +12,7 @@
     <artifactId>model</artifactId>
 
     <properties>
-    <property>
         <nd4j.backend>nd4j-cuda-9.2-platform</nd4j.backend>
-    </property>
     </properties>
 
     <dependencies>

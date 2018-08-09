@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e4e252f4-9b80-4dda-b806-1505c1ebf6df" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -91,7 +90,7 @@
         <entry file="file://$PROJECT_DIR$/model/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -184,7 +183,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
+  <component name="ProjectFrameBounds" extendedState="5">
     <option name="x" value="856" />
     <option name="width" value="1054" />
     <option name="height" value="1046" />
@@ -240,7 +239,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533837404871" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533837677609" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../self_introduction" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -318,7 +317,7 @@
       <option name="presentableId" value="Default" />
       <updated>1533662944891</updated>
       <workItem from="1533662949904" duration="42992000" />
-      <workItem from="1533837139674" duration="370000" />
+      <workItem from="1533837139674" duration="538000" />
     </task>
     <task id="LOCAL-00001" summary="update some file [Processing]">
       <created>1533763871006</created>
@@ -338,7 +337,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43362000" />
+    <option name="totallyTimeSpent" value="43530000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -350,10 +349,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="856" y="0" width="1054" height="1046" extended-state="4" />
+    <frame x="856" y="0" width="1054" height="1046" extended-state="5" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2001992" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2001992" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -368,7 +367,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32894737" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49862763" visible="true" weight="0.33223686" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49862763" visible="true" weight="0.33223686" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5013724" side_tool="true" weight="0.32969433" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32894737" />
       <window_info anchor="bottom" id="Spring" order="11" />
@@ -534,7 +533,7 @@
     <entry file="file://$PROJECT_DIR$/model/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
