@@ -145,7 +145,7 @@ public class SimpleSequence2VecModel {
         System.out.println("Create DataSet!");
         BaseWordSequenceParser sequenceParser =
                 new SimpleWordSequenceLabelCSVParser(
-                        new CSVRecordReader(1, ","),
+                        new CSVLineSequenceRecordReader(1, ','),
                         new SimpleEnglishTextParser(),
                         new FileSplit(new File("resources/question_source.csv")));
         sequenceParser.runAndSave(1, 2,

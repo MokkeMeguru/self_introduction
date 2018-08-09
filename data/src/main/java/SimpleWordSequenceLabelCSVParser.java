@@ -1,4 +1,5 @@
 import org.apache.uima.resource.ResourceInitializationException;
+import org.datavec.api.records.reader.impl.csv.CSVLineSequenceRecordReader;
 import org.datavec.api.records.reader.impl.csv.CSVRecordReader;
 import org.datavec.api.split.FileSplit;
 import org.datavec.api.writable.Writable;
@@ -13,13 +14,8 @@ import java.util.stream.Collectors;
 
 import static java.util.Collections.max;
 
-
-// notice: Id is started at "0".
-//         And this expect this dictionary has all words in all features.
-//         This model will be Crash. We must monitor so that the score does not become 0.
-
 public class SimpleWordSequenceLabelCSVParser implements BaseWordSequenceParser {
-    private CSVRecordReader recordReader;
+    private CSVLineSequenceRecordReader recordReader;
     private BaseTextParser textParser;
     private FileSplit inputFile;
 
@@ -33,7 +29,7 @@ public class SimpleWordSequenceLabelCSVParser implements BaseWordSequenceParser 
     private List<List<String>> featuresList;
     private List<Integer> labelList;
 
-    public SimpleWordSequenceLabelCSVParser(CSVRecordReader recordReader, BaseTextParser textParser, FileSplit inputFile) throws IOException, InterruptedException {
+    public SimpleWordSequenceLabelCSVParser(CSVLineSequenceRecordReader recordReader, BaseTextParser textParser, FileSplit inputFile) throws IOException, InterruptedException {
         this.recordReader = recordReader;
         this.textParser = textParser;
         this.inputFile = inputFile;
@@ -47,7 +43,7 @@ public class SimpleWordSequenceLabelCSVParser implements BaseWordSequenceParser 
         this.labelList = new ArrayList<>();
     }
 
-    public SimpleWordSequenceLabelCSVParser(CSVRecordReader recordReader, BaseTextParser textParser, FileSplit inputFile,
+    public SimpleWordSequenceLabelCSVParser(CSVLineSequenceRecordReader recordReader, BaseTextParser textParser, FileSplit inputFile,
                                             Map<String, Integer> wordIdDict, Map<Integer, String> idWordDict) throws IOException, InterruptedException {
         this.recordReader = recordReader;
         this.textParser = textParser;
@@ -220,7 +216,7 @@ public class SimpleWordSequenceLabelCSVParser implements BaseWordSequenceParser 
         System.out.println("Start!");
         BaseWordSequenceParser sequenceParser =
                 new SimpleWordSequenceLabelCSVParser(
-                        new CSVRecordReader(1,","),
+                        new CSVLineSequenceRecordReader(1, ','),
                         new SimpleEnglishTextParser(),
                         new FileSplit(new File("resources/question_source.csv")));
         sequenceParser.runAndSave(1,2,
