@@ -112,4 +112,5 @@ public class SimpleEnglishTextParser implements BaseTextParser {
     The function createDataSetIterator is create the instance of SequenceRecordReaderDataSetIterator.
     SequenceRecordReaderDataSetIterator is the class of creating datasets for sequencial data.
     By using ALIGN_END you can express the following relationship between "feature" and "label":
+
     [[../resources/many_to_one.png]]
