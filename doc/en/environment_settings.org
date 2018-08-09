@@ -24,9 +24,9 @@ But you can use Emacs, Vim, Visual Studio (Code) etc.
 git clone https://github.com/MokkeMeguru/self_introduction
    #+END_EXAMPLE
 and open it with Intellij.    
-[[../resources/import_project.png][import project]]    
+[[../resources/import_project.png]]
 Next, you run this command in the terminal for resolve dependencies.    
-[[../resources/resolve_dependencies.png][resolve dependencies]]    
+[[../resources/resolve_dependencies.png]]   
 #+BEGIN_EXAMPLE
 mvn clean
 #+END_EXAMPLE
