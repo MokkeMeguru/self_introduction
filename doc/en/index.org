@@ -1,0 +1,12 @@
+* Index
+
+** Problem Setting
+ I want to categorize multiple questions for several answers with neural network.
+ In other words, I'd like to create a machenizm to decriminate what is being asked.
+** Environment Setting
+ See [[./environment_settings.org][here]].
+** Data Transformation
+
+** Model Setting
+
+** Run
