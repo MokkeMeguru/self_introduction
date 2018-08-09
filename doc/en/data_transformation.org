@@ -75,4 +75,41 @@ public class SimpleEnglishTextParser implements BaseTextParser {
     #+END_SRC
 *** SimpleWordSequenceLabelCSVParser
     This class solve task 1, 2, 4, 5.
+    First, let's see fields
+    #+BEGIN_SRC java
+    private CSVLineSequenceRecordReader recordReader;
+    private BaseTextParser textParser;
+    private FileSplit inputFile;
+
+    private Map<String, Integer> wordIdDict;
+    private Map<Integer, String> idWordDict;
+    int currentId;
+
+    private int featureMaxLength;
+    private int labelSize;
+
+    private List<List<String>> featuresList;
+    private List<Integer> labelList;
+    #+END_SRC
+    CSVLineSequenceRecordReader is the useful class for read CSV file.
+    BaseTextParser is a text transformer such as SimpleEnglishTextParser.    
+    wordIdDict means the word->id dictionary, and idWordDict means the id->word dictionary.So, these dictionary can solve task 2.
+    currentId means dictionary's size. It can help adding a new word.
+    featureMaxLength means text's length (ex. "I'm hangry" = 2).
+    labelSize means number of type of response.
     
+    Next, I introduce some main function.
+**** addWord
+     Add word into these dictionary.
+**** run
+     Read the whole csv file and add word into these dictionary using addWord function.
+**** text2vecs
+     Transform question text to list of word's id.
+**** save
+     Decompose the csv file and save "features" and "labels".
+*** Sequence2VecDataSetIteratorFactory
+    This class solve task 6.
+    The function createDataSetIterator is create the instance of SequenceRecordReaderDataSetIterator.
+    SequenceRecordReaderDataSetIterator is the class of creating datasets for sequencial data.
+    By using ALIGN_END you can express the following relationship between "feature" and "label":
+    [[../resources/many_to_one.png]]
