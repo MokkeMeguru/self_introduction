@@ -1,6 +1,7 @@
 * Data Transformation
 ** Setting
    See the module "data". We will discuss this module as code.
+
    And See the directory "self_introduction/resources". This directory has all material data of this project.
    #+BEGIN_EXAMPLE
    - self_introduction
@@ -23,6 +24,7 @@ index,text,answerId
 7,"What do you like to do in your free time ?",2
    #+END_SRC
    This is question list. If someone ask it "What is your name?", it answer <answerId 1>.
+
    What is answerId? So, see "answer_source.csv"
    #+BEGIN_SRC csv
 answerId,text
@@ -30,14 +32,18 @@ answerId,text
 2,"I like playing Glass Simulator in my free time ."
    #+END_SRC
    See the text of <answerId 1>. It is "My name is Akari".
+
    So, if it is asked "What is your name ?", say "My name is Akari."
 ** About Data
 *** What should we do?
     We will decompose question_source.csv to "features" and "labels".
+
     "feature" is a number sequence which shows question text.
+
     "label" is a number which shows answer id.  
     
     So, we can set these Tasks.
+
     1. Read the csv and get necessary parts.
     2. Create or Load "word-id" Dictionary.
     3. Transform the question text to a word sequence
@@ -46,7 +52,9 @@ answerId,text
     6. Load those files and create the dataset for this project.
 *** SimpleEnglishTextParser
     This class solve task 3.
+
     UimaTokenizerFactory is tokenize english text. 
+
     LowCasePreProcessor is preprocessor which convert word to lower case.
     #+BEGIN_SRC java
 public class SimpleEnglishTextParser implements BaseTextParser {
@@ -75,6 +83,7 @@ public class SimpleEnglishTextParser implements BaseTextParser {
     #+END_SRC
 *** SimpleWordSequenceLabelCSVParser
     This class solve task 1, 2, 4, 5.
+
     First, let's see fields
     #+BEGIN_SRC java
     private CSVLineSequenceRecordReader recordReader;
@@ -91,11 +100,17 @@ public class SimpleEnglishTextParser implements BaseTextParser {
     private List<List<String>> featuresList;
     private List<Integer> labelList;
     #+END_SRC
+
     CSVLineSequenceRecordReader is the useful class for read CSV file.
+
     BaseTextParser is a text transformer such as SimpleEnglishTextParser.    
+
     wordIdDict means the word->id dictionary, and idWordDict means the id->word dictionary.So, these dictionary can solve task 2.
+
     currentId means dictionary's size. It can help adding a new word.
+
     featureMaxLength means text's length (ex. "I'm hangry" = 2).
+
     labelSize means number of type of response.
     
     Next, I introduce some main function.
@@ -109,8 +124,11 @@ public class SimpleEnglishTextParser implements BaseTextParser {
      Decompose the csv file and save "features" and "labels".
 *** Sequence2VecDataSetIteratorFactory
     This class solve task 6.
+
     The function createDataSetIterator is create the instance of SequenceRecordReaderDataSetIterator.
+
     SequenceRecordReaderDataSetIterator is the class of creating datasets for sequencial data.
+
     By using ALIGN_END you can express the following relationship between "feature" and "label":
 
     [[../resources/many_to_one.png]]
