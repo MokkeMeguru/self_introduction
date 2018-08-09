@@ -1,0 +1,29 @@
+* Environment Setting
+** OS
+ I developed this project on Manjaro Linux. 
+ But you can use Windows, Linux, Mac OS X. See [[https://deeplearning4j.org/docs/v1.0.0-beta2/deeplearning4j-quickstart][Deeplearning4j's official page]]
+** Around GPU-computing
+ You should install nvidia driver and cuda.
+ Here is those installation guide for Manjaro Linux.
+ reference: [[https://wiki.manjaro.org/index.php/Configure_Graphics_Cards][Configure Graphics Cards]] [[https://wiki.archlinux.org/index.php/GPGPU#CUDA][GPGPU #CUDA]]
+*** install nvidia driver
+    See [[https://wiki.manjaro.org/index.php/Configure_Graphics_Cards][Configure Graphics Cards]].
+*** install cuda
+    #+BEGIN_EXAMPLE
+yourt -S downgrader cudnn
+downgrader cuddn
+    #+END_EXAMPLE
+    and select "cudnn-7.1.4-1" 
+    Because it is the cudnn for cuda 9.2. cuda 9.2 is the latest cuda version for deeplearning4j (8/10/2018).
+
+** Editor
+I recommend you using [[https://www.jetbrains.com/idea/][Intellij IDEA]] because it can help us creating & editing & testing the project.
+But you can use Emacs, Vim, Visual Studio (Code) etc.
+** Import This Project
+   #+BEGIN_EXAMPLE
+git clone https://github.com/MokkeMeguru/self_introduction
+   #+END_EXAMPLE
+and open it with Intellij.
+[[../resources/import_project.png][import project]]
+
+** [Optional] Create First Project
