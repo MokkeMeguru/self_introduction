@@ -3,9 +3,13 @@
    私はこのプロジェクトを Manjaro Linux で開発しましたが、おそらくWindows, Linux, Mac OS X でも同様の動作が期待できると思います。
 ** GPU コンピューティングについて
    nvidia ドライバと cuda/cudnn をインストールすることで GPU を用いた計算を行うことができます。
+   
    このプロジェクトではそれらを用いているため、それらがインストールされていることを期待します。
+   
    (CPU のみで計算を行う場合には、pom.xmlを [[CPU のみで計算する][このように]] 修正する必要があります。)
+   
    以下に Manjaro Linux における GPU 計算のための環境構築について紹介します。
+   
    参考文献 : [[https://wiki.manjaro.org/index.php/Configure_Graphics_Cards][Configure Graphics Cards]] [[https://wiki.archlinux.org/index.php/GPGPU#CUDA][GPGPU #CUDA]]
 *** nvidia driver をインストールする
     [[https://wiki.manjaro.org/index.php/Configure_Graphics_Cards][Configure Graphics Cards]] に従って設定してください。
