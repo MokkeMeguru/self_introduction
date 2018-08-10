@@ -1,5 +1,9 @@
-* Model Figure
+* Self_introduction
   *document* [[./doc/en/index.org][en]] / [[./doc/ja/index.org][ja]]
+  Example of Recurrent Neural Network with Deeplearning4j.
+
+* Sample Figure
+
 
  [[./Diagram.png]]
  [[./Train.png]]
