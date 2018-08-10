@@ -134,6 +134,7 @@ if (showUI) {
 }
     #+END_SRC
     If the element "showUI" is true, we can watch the visualization by accessing "localhost:9000".
+    [[../../Train.png]]
 *** Save the model
     This task is implemented with the following function.
     #+BEGIN_SRC java
@@ -193,3 +194,5 @@ if (showUI) {
     The array shows the probability of being each answe-id.
     
     So select the ID with the highest probability.
+    
+    [[../../Example.png]]
