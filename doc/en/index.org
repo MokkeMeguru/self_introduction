@@ -6,7 +6,7 @@
 ** Environment Setting
  See [[./environment_settings.org][here]].
 ** Data Transformation
- See [[data_transformation.org][here]].
-** Model Setting
+ See [[./data_transformation.org][here]].
+** Model
+ See [[./model_setting.org][here]].
 
-** Run

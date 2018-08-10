@@ -132,3 +132,5 @@ public class SimpleEnglishTextParser implements BaseTextParser {
     By using ALIGN_END you can express the following relationship between "feature" and "label":
 
     [[../resources/many_to_one.png]]
+
+    reference: [[https://deeplearning4j.org/docs/v1.0.0-beta2/deeplearning4j-nn-recurrent#masking][Masking:One-to-Many,Many-to-One,and Sequence Classification]]

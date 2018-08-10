@@ -1,6 +1,5 @@
 import org.apache.uima.resource.ResourceInitializationException;
 import org.datavec.api.records.reader.impl.csv.CSVLineSequenceRecordReader;
-import org.datavec.api.records.reader.impl.csv.CSVRecordReader;
 import org.datavec.api.split.FileSplit;
 import org.datavec.api.writable.Writable;
 import org.deeplearning4j.api.storage.StatsStorage;

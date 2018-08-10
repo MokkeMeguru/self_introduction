@@ -1,4 +1,3 @@
-import org.datavec.api.conf.Configuration;
 import org.datavec.api.records.reader.impl.csv.CSVLineSequenceRecordReader;
 import org.datavec.api.split.FileSplit;
 import org.deeplearning4j.datasets.datavec.SequenceRecordReaderDataSetIterator;

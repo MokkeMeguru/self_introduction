@@ -1,0 +1,195 @@
+* Model
+** Setting
+   See the module "model". We will discuss this module as code.
+
+   #+BEGIN_EXAMPLE
+   - self_introduction
+   |- ...
+   |- module
+       |- src
+           |- main
+              |- SimpleSequence2VecModel.java
+       |- pom.xml
+   |- ...
+   #+END_EXAMPLE
+** SimpleSequence2VecModel Settings
+   The schematic diagram of this model is as follows.
+
+   [[../../Diagram.png]]
+
+   DataSetIterator which was created at the "Data" supplies word vectors and answer id.
+   So we should think processes after that.
+   
+   First, we talk about network settings.
+
+*** NeuralNetConfiguration.Builder
+    This class provide us some basic configuration such as a seed value of generation random value.
+    
+    In this model it written below code.
+    #+BEGIN_SRC java
+final NeuralNetConfiguration.Builder builder =
+        new NeuralNetConfiguration.Builder()
+                .seed(140)
+                .updater(new RmsProp(RmsProp.DEFAULT_RMSPROP_LEARNING_RATE))
+                .weightInit(WeightInit.XAVIER)
+                .gradientNormalization(GradientNormalization.RenormalizeL2PerLayer);
+    #+END_SRC
+    seed is the value of generation random value.
+
+    updater is the method to update parameters. (ex. ADAM, AdaDelta, RMSProp, Adagrad)
+
+    weightInit is the method of initialization weight parameters. (ex. NORMALIZED, XAVIER, RELU etc...)
+    
+    gradientNormalization is the method of gradient normalization. (ex. ClipelementWiseAbsoluteValue ClipL2PerLayer RenormalizeL2PerLayer etc ...)
+
+    I have set the values ​​as follows, but you can set other values.
+
+    reference : [[https://deeplearning4j.org/api/v1.0.0-beta2/][javadoc (for version 1.0.0-beta2)]]
+
+*** ComputationGraphConfiguration.GraphBuilder
+    This class provide us configuration of concrete network.
+
+    In this model it written below code.
+    #+BEGIN_SRC java
+final ComputationGraphConfiguration.GraphBuilder graphBuilder =
+        builder.graphBuilder()
+                .pretrain(false)
+                .backprop(true)
+                .backpropType(BackpropType.Standard)
+                .addInputs("inputLine")
+                .setInputTypes(InputType.recurrent(dictSize))
+                .addLayer("embeddingEncoder",
+                        new EmbeddingLayer.Builder().nIn(dictSize).nOut(dictSize).build(),
+                        "inputLine")
+                .addLayer("encoder",
+                        new LSTM.Builder()
+                                .nIn(dictSize)
+                                .nOut(dictSize / 4)
+                                .activation(Activation.TANH)
+                                .build(),
+                        "embeddingEncoder")
+                .addLayer("output",
+                        new RnnOutputLayer.Builder()
+                                .nIn(dictSize / 4)
+                                .nOut(labelSize)
+                                .activation(Activation.SOFTMAX)
+                                .lossFunction(LossFunctions.LossFunction.MCXENT)
+                                .build(),
+                        "encoder")
+                .setOutputs("output");
+    #+END_SRC
+    pretrain is settings of pretraining (I think this property is for autoencoder...)
+    
+    backprop is settings of backpropagation, and backpropType means its type.
+    
+    addInputs name the input array as "inputLine". By doing this you can handle input from the dataset.
+
+    setInputTypes is definition of input array's type. In this case, we want to create rnn, and input vector's size is dictSize (dictionary's size). (convert word-id to one-hot vector)
+    
+    addLayer is create a nn layer. Look at this arguments. First one is layer and output name. Second one is type of layer such as LSTM, RNN, CNN. Third one is layer's input name.
+    
+    nIn and nOut means input/output dimension.
+
+    EmbeddingLayer is compression(expanding) word vector dimension.
+    
+    LSTM is lstm network, and its activation is activation function (usually it is TANH).
+    
+    RnnOutputLayer is rnn output. Consider this problem (question text -> answer id), you notice we want to get last lstm cell's output. But its settings are completed at DataSetIterator (see the section [[./data_transformation.org][here]].)
+
+    lossFunction is loss function. (ex. MCXENT (multi-class cross entropy loss function), MSE, RMSE etc ...)
+
+    setOutputs is the whole network's output.
+
+** Train and Prediction and etc ...
+*** Train the model
+    This task is implemented with the following function.
+    #+BEGIN_SRC java
+public void train() {
+    for (int epoch = 1; epoch < 300; ++epoch) {
+        System.out.println("Epoch :" + epoch);
+        this.dataSetIterator.reset();
+        while (this.dataSetIterator.hasNext()) {
+            DataSet trainData = this.dataSetIterator.next();
+            net.fit(trainData);
+        }
+    }
+}
+    #+END_SRC    
+    One epoch means process training the whole datasetIterator, and that epoch process will be done 300 times.
+*** Visualization
+    Visualization means we can watch training process via web browser.
+    
+    See this part of the function "initNetWork".
+    #+BEGIN_SRC java
+if (showUI) {
+    UIServer uiServer = UIServer.getInstance();
+    StatsStorage statsStorage = new InMemoryStatsStorage();
+    statsStorage.removeAllListeners();
+    uiServer.attach(statsStorage);
+    net.setListeners(new StatsListener(statsStorage));
+} else {
+    StatsStorage statsStorage = new InMemoryStatsStorage();
+    statsStorage.removeAllListeners();
+    net.setListeners(new StatsListener(statsStorage));
+}
+    #+END_SRC
+    If the element "showUI" is true, we can watch the visualization by accessing "localhost:9000".
+*** Save the model
+    This task is implemented with the following function.
+    #+BEGIN_SRC java
+    public void saveModel() throws IOException {
+        File saveFile = new File("resources/ComputationGraph.zip");
+        boolean saveUpdater = true;
+        ModelSerializer.writeModel(net, saveFile, saveUpdater);
+    }
+    #+END_SRC
+    Save the trained model at "resources/ComputationGraph.zip".
+*** Load the model
+    This task is implemented with the following function.
+    #+BEGIN_SRC java
+    public void loadNetWork(File file) throws IOException {
+        net = ModelSerializer.restoreComputationGraph(file);
+    }
+    #+END_SRC
+    Load the trained model saved at the argument's file.
+*** Prediction
+    This task is implemented with following parts.
+    #+BEGIN_SRC java
+    private int rawPredictData(double[] doubles) {
+        net.rnnClearPreviousState();
+        INDArray[] o = net.output(Nd4j.create(new double[][][]{{doubles}}));
+        // System.out.println(o[0]);
+        System.out.println(o[0].getRow(0).tensorAlongDimension(doubles.length - 1, 0));
+        int result;
+        result = (int) Nd4j.getExecutioner().exec(
+                new IMax(o[0].getRow(0).tensorAlongDimension(doubles.length - 1, 0)),
+                1).getDouble(0);
+        // System.out.println(result);
+        return result;
+    }
+    #+END_SRC
+    
+    In main function.
+    #+BEGIN_SRC java
+    while (true) {
+        System.out.println("> [Exit : type \"QUIT\"]");
+        String str = scanner.nextLine();
+        if (str.toUpperCase().equals("QUIT")) return;
+        double[] doubles =
+                sequenceParser
+                        .text2vecs(str, "<unk>")
+                        .stream()
+                        .mapToDouble(d -> d)
+                        .toArray();
+        result = model.rawPredictData(doubles);
+        System.out.println(">> " + answerMap.get(result + 1));
+    }
+    #+END_SRC
+
+    First, read inputs as string. And compose string to word-ids' array.
+
+    Next, input the array into the model. Answer-ids' array will then be returned.
+
+    The array shows the probability of being each answe-id.
+    
+    So select the ID with the highest probability.
