@@ -167,31 +167,34 @@ public class SimpleSequence2VecModel {
                         new FileSplit(new File("resources/features.csv")),
                         new FileSplit(new File("resources/label.csv"))
                 );
-        // ------------------------------------
+        // Initialize Process ------------------------
         SimpleSequence2VecModel model = new SimpleSequence2VecModel(
                 wordSequenceParser,
                 dictSize,
                 labelSize);
 
-        // ------------------------------------
+        // Training Process --------------------------
         // boolean showUI = false;
         // System.out.println("Initialize model");
         // model.setFeatureMaxLength(featureMaxLength);
         // model.initNetWork(showUI);
         // System.out.println("Initialize Finish");
-        // -------------------------------------
+
         // System.out.println("Train model");
         // model.train();
         // System.out.println("Train Finish");
-        // -------------------------------------------
+
+        // Save Process -------------------------------
         // System.out.println("Save Start");
         // model.saveModel();
         // System.out.println("Save Finish");
-        // -------------------------------------------
-         System.out.println("load Model");
-         model.loadNetWork(new File("resources/ComputationGraph.zip"));
-         System.out.println("load Finish");
-        // ------------------------------------------
+
+        // Load Process -------------------------------
+        System.out.println("load Model");
+        model.loadNetWork(new File("resources/ComputationGraph.zip"));
+        System.out.println("load Finish");
+
+        // Predict Process ----------------------------
         Scanner scanner = new Scanner(System.in);
         int result;
         CSVLineSequenceRecordReader answerReader = new CSVLineSequenceRecordReader(1, ',');

@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e4e252f4-9b80-4dda-b806-1505c1ebf6df" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/src/main/java/Sequence2VecDataSetIteratorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/Sequence2VecDataSetIteratorFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/src/main/java/SimpleWordSequenceLabelCSVParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/SimpleWordSequenceLabelCSVParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/en/data_transformation.org" beforeDir="false" afterPath="$PROJECT_DIR$/doc/en/data_transformation.org" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/en/index.org" beforeDir="false" afterPath="$PROJECT_DIR$/doc/en/index.org" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.org" beforeDir="false" afterPath="$PROJECT_DIR$/README.org" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/src/main/java/SimpleSequence2VecModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/SimpleSequence2VecModel.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -61,7 +58,7 @@
           <entry key="class" value="1" />
           <entry key="csv" value="253" />
           <entry key="dummy" value="88" />
-          <entry key="java" value="13949" />
+          <entry key="java" value="14113" />
           <entry key="org" value="68" />
           <entry key="txt" value="42" />
           <entry key="xml" value="396" />
@@ -71,7 +68,7 @@
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="CSV" value="253" />
-          <entry key="JAVA" value="13949" />
+          <entry key="JAVA" value="14113" />
           <entry key="PLAIN_TEXT" value="198" />
           <entry key="XML" value="396" />
         </counts>
@@ -83,10 +80,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-9">
+            <state relative-caret-position="384">
               <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
             </state>
           </provider>
@@ -101,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/src/main/java/SimpleSequence2VecModel.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="722">
-              <caret line="217" lean-forward="true" selection-start-line="217" selection-end-line="217" />
+              <caret line="220" column="1" lean-forward="true" selection-start-line="220" selection-start-column="1" selection-end-line="220" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -331,7 +328,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533893468986" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533894745097" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../self_introduction" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -410,7 +407,7 @@
       <updated>1533662944891</updated>
       <workItem from="1533662949904" duration="42992000" />
       <workItem from="1533837139674" duration="1346000" />
-      <workItem from="1533846469101" duration="8538000" />
+      <workItem from="1533846469101" duration="9555000" />
     </task>
     <task id="LOCAL-00001" summary="update some file [Processing]">
       <created>1533763871006</created>
@@ -430,7 +427,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52876000" />
+    <option name="totallyTimeSpent" value="53893000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -556,13 +553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -640,10 +630,17 @@
     <entry file="file://$PROJECT_DIR$/model/src/main/java/SimpleSequence2VecModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="722">
-          <caret line="217" lean-forward="true" selection-start-line="217" selection-end-line="217" />
+          <caret line="220" column="1" lean-forward="true" selection-start-line="220" selection-start-column="1" selection-end-line="220" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
         </state>
       </provider>
     </entry>

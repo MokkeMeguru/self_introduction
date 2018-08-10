@@ -1,5 +1,5 @@
 * Model Figure
-
+  *document* [[./doc/en/index.org][en]] / [[./doc/ja/index.org][ja]]
 
  [[./Diagram.png]]
  [[./Train.png]]
