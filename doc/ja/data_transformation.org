@@ -1,0 +1,133 @@
+* データの変換
+** 設定
+   このセクションは "data" モジュールについて話をしています。またすべての素材データは "self_introduction/resources" フォルダに入っています。
+   #+BEGIN_EXAMPLE
+   - self_introduction
+   |- data
+       |- src
+       |- pom.xml
+   |- ...
+   |- resources
+   #+END_EXAMPLE
+** 素材データについて
+   "resources/question_source.csv" を見て下さい。
+   #+BEGIN_SRC csv
+index,text,answerId
+1,"What is your name ?",1
+2,"Who are you ?",1
+3,"What's your name ?",1
+4,"Can I ask your name ?",1
+5,"I didn't ask your name ?",1
+6,"May I have your name please ?",1
+7,"What do you like to do in your free time ?",2
+   #+END_SRC
+   これは質問リストです。もし "What is your name ?"　と質問をされれば、回答ラベルの 1 が返される、という構造になっています。
+   
+   同様に "answer_source.csv" を見て下さい。こちらには回答ラベルとそれに対応した回答文が入っています。
+   #+BEGIN_SRC csv
+answerId,text
+1,"My name is Akari ."
+2,"I like playing Glass Simulator in my free time ."
+   #+END_SRC
+   つまり例えば "What is your name ?" と質問をされれば、"My name is Akari" と返ってくることを期待しているのです。
+
+** データモジュールについて
+*** このモジュールでは何をするべきなのか
+    まず思いつくことは question_source.csv を 特徴(入力) と ラベルに分解することです。
+    
+    特徴(入力) とは数字の列であり、数字はすなわち単語の ID を表します。つまりテキストを単語ごとに切り分けた数列に変換したもの、ということです。
+    
+    ラベル とは数字であり、これは回答ラベルです。
+    
+    これらを考慮すると、以下のタスクを思いつくことが出来るでしょう。
+    
+    1. CSV ファイルを読み込んで必要な部分を切り出す。
+    2. 単語 と ID の関係を保存した辞書を作る。
+    3. 質問文を単語列に変換する。
+    4. 単語列を単語IDの数列に変換する。
+    5. 質問の数列と回答IDを同期して(同じ順番で)保存する。
+    6. 保存したそれらのファイルを読み出してデータセットという形にする。
+*** SimpleEnglishTextParser
+    このクラスはタスク 3 を解くためにあります。
+    
+    UimaTokenizerFactory は文章を単語に分解するための既存のクラスです。
+    
+    LowCasePreProcessor は単語を小文字化する既存のクラスです。
+    #+BEGIN_SRC java
+public class SimpleEnglishTextParser implements BaseTextParser {
+    private TokenizerFactory tokenizer;
+
+    public SimpleEnglishTextParser() throws ResourceInitializationException {
+        this.tokenizer = new UimaTokenizerFactory();
+        this.tokenizer.setTokenPreProcessor(new LowCasePreProcessor());
+    }
+
+    public SimpleEnglishTextParser(TokenizerFactory tokenizer) {
+        this.tokenizer = tokenizer;
+    }
+
+    @Override
+    public List<String> parse(String text) {
+        return this.tokenizer.create(text).getTokens();
+    }
+
+    public static void main (String... args) throws ResourceInitializationException {
+        BaseTextParser textParser = new SimpleEnglishTextParser();
+        System.out.println(textParser.parse("Hello, my name is Meguru. Nice to meet you."));
+        // => [hello, ,, my, name, is, meguru, ., nice, to, meet, you, .]
+    }
+}
+    #+END_SRC
+*** SimpleWordSequenceLabelCSVParser
+    このクラスはタスク 1, 2, 4, 5 を解くためにあります。
+    
+    このクラスのフィールドを見て下さい。
+    #+BEGIN_SRC java
+    private CSVLineSequenceRecordReader recordReader;
+    private BaseTextParser textParser;
+    private FileSplit inputFile;
+
+    private Map<String, Integer> wordIdDict;
+    private Map<Integer, String> idWordDict;
+    int currentId;
+
+    private int featureMaxLength;
+    private int labelSize;
+
+    private List<List<String>> featuresList;
+    private List<Integer> labelList;
+    #+END_SRC
+    
+    CSVLineSequenceRecordReader は CSV ファイルを読み込むための、便利な既存クラスです。
+    
+    BaseTextParser は 文章を単語列に変換する 例えば SimpleEnglishTextParser のようなクラスです。
+    
+    wordIdDict は word->id の辞書で、同様に idWordDict は id->word の辞書です。
+    
+    currentId は 辞書のサイズを表しており、これは新しい単語を辞書に追加する際に重宝します。
+    
+    featureMaxLength は 今まで読み込んだ文章の最大サイズです。例えば "I'm hangry" ならば文章の長さは 2 です)
+    
+    labelSize は 回答の種類です。
+
+    次に重要となるいくつかの関数について説明します。
+**** addWord
+     単語を辞書に追加します。
+**** run
+     CSV ファイルを読み込んで、 addWord 関数を用いて単語を辞書に追加します。
+**** text2vecs
+     質問文を単語 ID 列に変換します。
+**** save
+     単語 ID 列と対応する回答ラベルをそれぞれ保存します。
+*** Sequence2VecDataSetIteratorFactory
+    このクラスはタスク 6 を解くためにあります。
+    
+    createDataSetIterator 関数は SequenceRecordReaderDataSetIterator クラスのインスタンスを作ります。 DataSetIterator は Deeplearning4j でモデルにデータを供給するためのクラスです。
+    
+    SequenceRecordReaderDataSetIterator は 数列のようなデータを扱うデータセットを作成するためのクラスです。
+    
+    ALIGN_END を用いることで、特徴(入力)とラベルの以下のような関係を表すために必要です。
+
+    [[../resources/many_to_one.png]]
+
+    参考文献: [[https://deeplearning4j.org/docs/v1.0.0-beta2/deeplearning4j-nn-recurrent#masking][Masking:One-to-Many,Many-to-One,and Sequence Classification]]

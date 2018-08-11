@@ -6,6 +6,6 @@
 ** 環境設定
    この[[./environment_settings.org][ベージ]]を見てください。
 ** データの変換
-   このベージを見てください。
+   この[[./data_transformation.org][ページ]]を見てください。
 ** モデル
-   このベージを見てください。
+   この[[./model_settings.org][ベージ]]を見てください。

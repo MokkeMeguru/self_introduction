@@ -42,7 +42,7 @@ final NeuralNetConfiguration.Builder builder =
     
     gradientNormalization is the method of gradient normalization. (ex. ClipelementWiseAbsoluteValue ClipL2PerLayer RenormalizeL2PerLayer etc ...)
 
-    I have set the values ​​as follows, but you can set other values.
+    I have set the values ​​as previous, but you can set other values.
 
     reference : [[https://deeplearning4j.org/api/v1.0.0-beta2/][javadoc (for version 1.0.0-beta2)]]
 

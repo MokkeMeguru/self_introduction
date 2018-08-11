@@ -1,0 +1,196 @@
+* モデル
+** 設定
+   　このセクションは "data" モジュールについて話をしています。
+
+   #+BEGIN_EXAMPLE
+   - self_introduction
+   |- ...
+   |- module
+       |- src
+           |- main
+              |- SimpleSequence2VecModel.java
+       |- pom.xml
+   |- ...
+   #+END_EXAMPLE
+** SimpleSequence2VecModel について
+   このモデルの概略図は以下のようになります。
+
+   [[../../Diagram.png]]
+   
+   Data モジュールで作られた DataSetIterator は、モデルに質問文を変換した数列と回答ラベルをを供給するので、ここではそれ以降の部分について考えます。
+   
+   まず基本的なニューラルネットワークの設定について説明します。
+*** NeuralNetConfiguration.Builder
+    このクラスではランダムな値を生成する seed 値などの、ネットワークの基本的な設定をします。
+    
+    このモデルでは以下のように設定されています。
+    #+BEGIN_SRC java
+final NeuralNetConfiguration.Builder builder =
+        new NeuralNetConfiguration.Builder()
+                .seed(140)
+                .updater(new RmsProp(RmsProp.DEFAULT_RMSPROP_LEARNING_RATE))
+                .weightInit(WeightInit.XAVIER)
+                .gradientNormalization(GradientNormalization.RenormalizeL2PerLayer);
+    #+END_SRC
+    seed はランダムな値を生成するための値です。
+    
+    updater はパラメータの更新に用いられる手法を設定します。 (ex. ADAM, AdaDelta, RMSProp, Adagrad)
+
+    weightInit は 重みの初期化に関する手法を設定します。(ex. NORMALIZED, XAVIER, RELU etc...)
+    
+    gradientNormalization は 勾配の正規化に関する手法を設定します。(ex. ClipelementWiseAbsoluteValue ClipL2PerLayer RenormalizeL2PerLayer etc ...)
+
+    現在はこのように値を設定していますが、別の値を試すことも出来ます。
+    
+    参考文献: [[https://deeplearning4j.org/api/v1.0.0-beta2/][javadoc (for version 1.0.0-beta2)]]
+
+*** ComputationGraphConfiguration.GraphBuilder
+    このクラスではネットワークの具体的な設定をします。
+
+    今回のモデルでは以下のように設定されています。
+    #+BEGIN_SRC java
+final ComputationGraphConfiguration.GraphBuilder graphBuilder =
+        builder.graphBuilder()
+                .pretrain(false)
+                .backprop(true)
+                .backpropType(BackpropType.Standard)
+                .addInputs("inputLine")
+                .setInputTypes(InputType.recurrent(dictSize))
+                .addLayer("embeddingEncoder",
+                        new EmbeddingLayer.Builder().nIn(dictSize).nOut(dictSize).build(),
+                        "inputLine")
+                .addLayer("encoder",
+                        new LSTM.Builder()
+                                .nIn(dictSize)
+                                .nOut(dictSize / 4)
+                                .activation(Activation.TANH)
+                                .build(),
+                        "embeddingEncoder")
+                .addLayer("output",
+                        new RnnOutputLayer.Builder()
+                                .nIn(dictSize / 4)
+                                .nOut(labelSize)
+                                .activation(Activation.SOFTMAX)
+                                .lossFunction(LossFunctions.LossFunction.MCXENT)
+                                .build(),
+                        "encoder")
+                .setOutputs("output");
+    #+END_SRC
+    pretrain は事前学習についての設定です。(おそらくこれは autoencoder のための設定です。)
+
+    backprop は誤差逆伝搬法について、 backpropType はその手法についての設定です。
+
+    addInputs は入力配列に "inputLine" という名前をつけます。こうすることでデータセットから入力を取り出したことになります。
+    
+    setInputTypes は入力のタイプを設定します。このモデルのケースでは、rnn になります。入力のサイズは dictSize となります(これは単語辞書のサイズです)。つまり入力される一つ一つの単語IDを one-hot ベクトルに変換しているのです。
+    
+    addLayer は ニューラルネットワークのレイヤーを作ります。引数を見て下さい。最初のそれはネットワークの名前であり、出力される値の名前でもあります。2つめの引数はレイヤーのタイプであり、例えばそれは LSTM、 RNN、CNNなどです。3つ目の引数はレイヤーに入力される値の名前です。
+    
+    nIn と nOut はそれぞれ入力、出力の次元数です。
+    
+    EmbeddingLayer は単語ベクトルを圧縮(拡張)するための層です。
+    
+    LSTM は lstm のネットワークであり、この活性化関数は activation で設定されます。(基本的にはTANH) が使われることが多いようです。
+    
+    RnnOutputLayer は rnn の出力を扱うためのレイヤーです。今回のモデルを考えると (質問文->回答ラベル) 最後の lstm セルからの出力と回答ラベルとの比較を行わなければならないことに気がつくと思います。しかしその設定は既に DataSetIterator で済ませてあります。 ([[./data_transformation.org][ここ]] を振り返って下さい。)
+    
+    lossFunction は損失関数です。(ex. MCXENT (multi-class cross entropy loss function), MSE, RMSE etc ...)
+    
+    setOutputs はネットワーク全体からの出力です。
+
+** 学習や予測
+*** モデルの学習
+    このタスクは以下の関数で実現されています。
+    #+BEGIN_SRC java
+public void train() {
+    for (int epoch = 1; epoch < 300; ++epoch) {
+        System.out.println("Epoch :" + epoch);
+        this.dataSetIterator.reset();
+        while (this.dataSetIterator.hasNext()) {
+            DataSet trainData = this.dataSetIterator.next();
+            net.fit(trainData);
+        }
+    }
+}
+    #+END_SRC
+    1 エポックでデータセット全体を学習し、それを300回繰り返します。
+*** 視覚化
+    視覚化によって学習プロセスをwebブラウザを通して確認することが出来ます。
+    
+    この部分は "initNetWork" 関数の以下の部分によって実現されています。
+    #+BEGIN_SRC java
+if (showUI) {
+    UIServer uiServer = UIServer.getInstance();
+    StatsStorage statsStorage = new InMemoryStatsStorage();
+    statsStorage.removeAllListeners();
+    uiServer.attach(statsStorage);
+    net.setListeners(new StatsListener(statsStorage));
+} else {
+    StatsStorage statsStorage = new InMemoryStatsStorage();
+    statsStorage.removeAllListeners();
+    net.setListeners(new StatsListener(statsStorage));
+}
+    #+END_SRC
+    もし "showUI" が true ならば、"localhost:9000" にアクセスして学習の様子を見ることが出来ます。
+    [[../../Train.png]]
+*** モデルの保存
+    このタスクは以下の関数で実現されています。
+    #+BEGIN_SRC java
+    public void saveModel() throws IOException {
+        File saveFile = new File("resources/ComputationGraph.zip");
+        boolean saveUpdater = true;
+        ModelSerializer.writeModel(net, saveFile, saveUpdater);
+    }
+    #+END_SRC
+    学習したモデルは "resources/ComputationGraph.zip" に保存されています。
+*** モデルのロード
+    このタスクは以下の関数で実現されています。
+    #+BEGIN_SRC java
+    public void loadNetWork(File file) throws IOException {
+        net = ModelSerializer.restoreComputationGraph(file);
+    }
+    #+END_SRC
+    引数はモデルを保存したファイルです。
+*** 予測
+    このタスクは以下の部分で実装されています。
+    #+BEGIN_SRC java
+    private int rawPredictData(double[] doubles) {
+        net.rnnClearPreviousState();
+        INDArray[] o = net.output(Nd4j.create(new double[][][]{{doubles}}));
+        // System.out.println(o[0]);
+        System.out.println(o[0].getRow(0).tensorAlongDimension(doubles.length - 1, 0));
+        int result;
+        result = (int) Nd4j.getExecutioner().exec(
+                new IMax(o[0].getRow(0).tensorAlongDimension(doubles.length - 1, 0)),
+                1).getDouble(0);
+        // System.out.println(result);
+        return result;
+    }
+    #+END_SRC
+    
+    これはメイン関数に書かれています。
+    #+BEGIN_SRC java
+    while (true) {
+        System.out.println("> [Exit : type \"QUIT\"]");
+        String str = scanner.nextLine();
+        if (str.toUpperCase().equals("QUIT")) return;
+        double[] doubles =
+                sequenceParser
+                        .text2vecs(str, "<unk>")
+                        .stream()
+                        .mapToDouble(d -> d)
+                        .toArray();
+        result = model.rawPredictData(doubles);
+        System.out.println(">> " + answerMap.get(result + 1));
+    }
+    #+END_SRC
+
+    まず入力を文字列として読み込みます。そして文字列を 単語IDの数列に変換します。
+    
+    次に変換した数列を、モデルに入力します。回答ラベルについての配列が返ってきます。
+
+    この配列はそれぞれの回答ラベルに対する確率を保持しています。
+
+    つまりこの確率が最大である回答ラベルが求めたい回答ラベルであると考えられます。
+    
+    [[../../Example.png]]

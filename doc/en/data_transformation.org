@@ -125,7 +125,7 @@ public class SimpleEnglishTextParser implements BaseTextParser {
 *** Sequence2VecDataSetIteratorFactory
     This class solve task 6.
 
-    The function createDataSetIterator is create the instance of SequenceRecordReaderDataSetIterator.
+    The function createDataSetIterator is create the instance of SequenceRecordReaderDataSetIterator. DataSetIterator is the class for provide data into deeplearning4j's model.
 
     SequenceRecordReaderDataSetIterator is the class of creating datasets for sequencial data.
 
