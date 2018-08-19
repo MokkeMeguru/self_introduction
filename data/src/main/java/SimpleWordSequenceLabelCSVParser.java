@@ -133,6 +133,7 @@ public class SimpleWordSequenceLabelCSVParser implements BaseWordSequenceParser 
     public void setwordIdDict(Map<String, Integer> wordIdDict, Map<Integer, String> idWordDict) {
         this.wordIdDict = wordIdDict;
         this.idWordDict = idWordDict;
+        this.currentId = wordIdDict.size();
     }
 
     @Override
