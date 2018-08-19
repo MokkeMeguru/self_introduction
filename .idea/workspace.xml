@@ -1,82 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4e252f4-9b80-4dda-b806-1505c1ebf6df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/SimpleJapaneseTextParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/igo-0.4.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ipadic/char.category" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ipadic/code2category" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ipadic/matrix.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ipadic/word.ary.idx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ipadic/word.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ipadic/word.inf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ipadic/word2id" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801.tar.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/AUTHORS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Adj.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Adnominal.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Adverb.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Auxil.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/COPYING" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/ChangeLog" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Conjunction.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Filler.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/INSTALL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Interjection.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Makefile.am" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Makefile.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/NEWS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Noun.adjv.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Noun.adverbal.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Noun.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Noun.demonst.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Noun.nai.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Noun.name.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Noun.number.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Noun.org.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Noun.others.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Noun.place.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Noun.proper.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Noun.verbal.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Others.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Postp-col.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Postp.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Prefix.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/RESULT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Suffix.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Symbol.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Verb.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/aclocal.m4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/char.def" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/config.guess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/config.sub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/configure" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/configure.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/dicrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/feature.def" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/install-sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/left-id.def" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/matrix.def" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/missing" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/mkinstalldirs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/pos-id.def" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/rewrite.def" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/right-id.def" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/unk.def" afterDir="false" />
+    <list default="true" id="e4e252f4-9b80-4dda-b806-1505c1ebf6df" name="Default Changelist" comment="for japanese">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.org" beforeDir="false" afterPath="$PROJECT_DIR$/README.org" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/src/main/java/SimpleWordSequenceLabelCSVParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/SimpleWordSequenceLabelCSVParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/target/classes/Sequence2VecDataSetIteratorFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/data/target/classes/Sequence2VecDataSetIteratorFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/target/classes/SimpleWordSequenceLabelCSVParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/data/target/classes/SimpleWordSequenceLabelCSVParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/src/main/java/SimpleSequence2VecModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/SimpleSequence2VecModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/target/classes/SimpleSequence2VecModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/SimpleSequence2VecModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/ComputationGraph.zip" beforeDir="false" afterPath="$PROJECT_DIR$/resources/ComputationGraph.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/answer_source.csv" beforeDir="false" afterPath="$PROJECT_DIR$/resources/answer_source.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/features.csv" beforeDir="false" afterPath="$PROJECT_DIR$/resources/features.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/label.csv" beforeDir="false" afterPath="$PROJECT_DIR$/resources/label.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/question_source.csv" beforeDir="false" afterPath="$PROJECT_DIR$/resources/question_source.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ipadic/word.ary.idx" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ipadic/word.ary.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ipadic/word.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ipadic/word.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ipadic/word.inf" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ipadic/word.inf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ipadic/word2id" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ipadic/word2id" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Noun.name.csv" beforeDir="false" afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Noun.name.csv" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -113,7 +44,7 @@
           <entry key="bin" value="3" />
           <entry key="class" value="2" />
           <entry key="csv" value="47" />
-          <entry key="java" value="42" />
+          <entry key="java" value="43" />
           <entry key="org" value="2" />
           <entry key="xml" value="14" />
         </counts>
@@ -122,7 +53,7 @@
         <counts>
           <entry key="CLASS" value="2" />
           <entry key="CSV" value="47" />
-          <entry key="JAVA" value="42" />
+          <entry key="JAVA" value="43" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="XML" value="14" />
         </counts>
@@ -134,7 +65,7 @@
           <entry key="dummy" value="88" />
           <entry key="java" value="14761" />
           <entry key="org" value="164" />
-          <entry key="txt" value="42" />
+          <entry key="txt" value="59" />
           <entry key="xml" value="396" />
         </counts>
       </usages-collector>
@@ -143,7 +74,7 @@
           <entry key="CLASS" value="1" />
           <entry key="CSV" value="254" />
           <entry key="JAVA" value="14761" />
-          <entry key="PLAIN_TEXT" value="294" />
+          <entry key="PLAIN_TEXT" value="311" />
           <entry key="XML" value="396" />
         </counts>
       </usages-collector>
@@ -177,11 +108,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/src/main/java/SimpleSequence2VecModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="220" column="9" lean-forward="true" selection-start-line="220" selection-start-column="9" selection-end-line="220" selection-end-column="9" />
+            <state relative-caret-position="-3195">
+              <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/src/main/java/SimpleJapaneseTextParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -344,7 +284,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534696399676" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534696571538" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/igo-0.4.5.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -435,7 +375,7 @@
       <workItem from="1533837139674" duration="1346000" />
       <workItem from="1533846469101" duration="10150000" />
       <workItem from="1534690151779" duration="4389000" />
-      <workItem from="1534727493112" duration="1285000" />
+      <workItem from="1534727493112" duration="1550000" />
     </task>
     <task id="LOCAL-00001" summary="update some file [Processing]">
       <created>1533763871006</created>
@@ -451,11 +391,18 @@
       <option name="project" value="LOCAL" />
       <updated>1533764335994</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="for japanese">
+      <created>1534696522329</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1534696522329</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60162000" />
+    <option name="totallyTimeSpent" value="60427000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -468,7 +415,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1046" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12780748" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -479,14 +425,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989011" visible="true" weight="0.41557017" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989011" weight="0.41557017" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32894737" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49862763" weight="0.32127193" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5013724" side_tool="true" weight="0.32894737" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49786097" visible="true" weight="0.63377196" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50213903" side_tool="true" weight="0.32127193" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32894737" />
       <window_info anchor="bottom" id="Spring" order="11" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
@@ -546,7 +492,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update some file [Processing]" />
-    <option name="LAST_COMMIT_MESSAGE" value="update some file [Processing]" />
+    <MESSAGE value="for japanese" />
+    <option name="LAST_COMMIT_MESSAGE" value="for japanese" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/EnglishTextParser.java" />
@@ -585,16 +532,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/src/main/java/SimpleJapaneseTextParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -673,8 +610,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model/src/main/java/SimpleSequence2VecModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="220" column="9" lean-forward="true" selection-start-line="220" selection-start-column="9" selection-end-line="220" selection-end-column="9" />
+        <state relative-caret-position="-3195">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/src/main/java/SimpleJapaneseTextParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
