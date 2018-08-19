@@ -63,6 +63,7 @@ public class SimpleWordSequenceLabelCSVParser implements BaseWordSequenceParser 
             String text = this.recordReader.next().get(featureIndex).toString();
             int label = this.recordReader.next().get(labelIndex).toInt();
             List<String> features = this.textParser.parse(text);
+            if(features.size() > featureMaxLength) featureMaxLength = features.size();
             features.forEach(str -> {
                 addWord(str);
             });
