@@ -10,6 +10,7 @@
  [[./Diagram.png]]
  [[./Train.png]]
  [[./Example.png]]
+ [[./japanese.jpg]]
 
 * memo
  we should shuffle data because dataset.shuffle() is not perfection...

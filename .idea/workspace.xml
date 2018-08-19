@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4e252f4-9b80-4dda-b806-1505c1ebf6df" name="Default Changelist" comment="for japanese">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ipadic/word.ary.idx" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ipadic/word.ary.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ipadic/word.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ipadic/word.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ipadic/word.inf" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ipadic/word.inf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ipadic/word2id" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ipadic/word2id" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Noun.name.csv" beforeDir="false" afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Noun.name.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.org" beforeDir="false" afterPath="$PROJECT_DIR$/README.org" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,7 +40,7 @@
           <entry key="class" value="2" />
           <entry key="csv" value="47" />
           <entry key="java" value="43" />
-          <entry key="org" value="2" />
+          <entry key="org" value="3" />
           <entry key="xml" value="14" />
         </counts>
       </usages-collector>
@@ -54,7 +49,7 @@
           <entry key="CLASS" value="2" />
           <entry key="CSV" value="47" />
           <entry key="JAVA" value="43" />
-          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="PLAIN_TEXT" value="6" />
           <entry key="XML" value="14" />
         </counts>
       </usages-collector>
@@ -64,7 +59,7 @@
           <entry key="csv" value="254" />
           <entry key="dummy" value="88" />
           <entry key="java" value="14761" />
-          <entry key="org" value="164" />
+          <entry key="org" value="187" />
           <entry key="txt" value="59" />
           <entry key="xml" value="396" />
         </counts>
@@ -74,7 +69,7 @@
           <entry key="CLASS" value="1" />
           <entry key="CSV" value="254" />
           <entry key="JAVA" value="14761" />
-          <entry key="PLAIN_TEXT" value="311" />
+          <entry key="PLAIN_TEXT" value="334" />
           <entry key="XML" value="396" />
         </counts>
       </usages-collector>
@@ -117,14 +112,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/src/main/java/SimpleJapaneseTextParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
+            <state relative-caret-position="236">
               <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.org">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -246,6 +250,11 @@
             <path>
               <item name="self_introduction" type="b2602c69:ProjectViewProjectNode" />
               <item name="self_introduction" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="self_introduction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="self_introduction" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -284,7 +293,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534696749555" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534696866551" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/igo-0.4.5.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -375,7 +384,7 @@
       <workItem from="1533837139674" duration="1346000" />
       <workItem from="1533846469101" duration="10150000" />
       <workItem from="1534690151779" duration="4389000" />
-      <workItem from="1534727493112" duration="1550000" />
+      <workItem from="1534727493112" duration="1788000" />
     </task>
     <task id="LOCAL-00001" summary="update some file [Processing]">
       <created>1533763871006</created>
@@ -402,7 +411,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60427000" />
+    <option name="totallyTimeSpent" value="60665000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -415,8 +424,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1046" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12780748" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12780748" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -431,7 +441,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32894737" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49786097" visible="true" weight="0.63377196" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49786097" visible="true" weight="0.63377196" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50213903" side_tool="true" weight="0.32127193" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32894737" />
       <window_info anchor="bottom" id="Spring" order="11" />
@@ -580,13 +590,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.org">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="70" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/features.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -617,11 +620,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/src/main/java/SimpleJapaneseTextParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
+        <state relative-caret-position="236">
           <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.org">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
         </state>
       </provider>
     </entry>
