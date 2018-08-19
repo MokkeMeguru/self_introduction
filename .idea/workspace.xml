@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4e252f4-9b80-4dda-b806-1505c1ebf6df" name="Default Changelist" comment="for japanese">
+    <list default="true" id="e4e252f4-9b80-4dda-b806-1505c1ebf6df" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/src/main/java/SimpleWordSequenceLabelCSVParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/SimpleWordSequenceLabelCSVParser.java" afterDir="false" />
     </list>
@@ -60,9 +60,9 @@
           <entry key="class" value="1" />
           <entry key="csv" value="254" />
           <entry key="dummy" value="88" />
-          <entry key="java" value="14804" />
+          <entry key="java" value="14874" />
           <entry key="org" value="187" />
-          <entry key="txt" value="59" />
+          <entry key="txt" value="77" />
           <entry key="xml" value="396" />
         </counts>
       </usages-collector>
@@ -70,8 +70,8 @@
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="CSV" value="254" />
-          <entry key="JAVA" value="14804" />
-          <entry key="PLAIN_TEXT" value="334" />
+          <entry key="JAVA" value="14874" />
+          <entry key="PLAIN_TEXT" value="352" />
           <entry key="XML" value="396" />
         </counts>
       </usages-collector>
@@ -117,8 +117,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/src/main/java/SimpleWordSequenceLabelCSVParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="135" column="41" selection-start-line="135" selection-start-column="41" selection-end-line="135" selection-end-column="41" />
+            <state relative-caret-position="180">
+              <caret line="64" column="33" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -324,7 +324,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534709420924" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534711243307" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/igo-0.4.5.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -416,7 +416,7 @@
       <workItem from="1533846469101" duration="10150000" />
       <workItem from="1534690151779" duration="4389000" />
       <workItem from="1534727493112" duration="2135000" />
-      <workItem from="1534697290777" duration="4808000" />
+      <workItem from="1534697290777" duration="6427000" />
     </task>
     <task id="LOCAL-00001" summary="update some file [Processing]">
       <created>1533763871006</created>
@@ -439,11 +439,25 @@
       <option name="project" value="LOCAL" />
       <updated>1534696522329</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="some bug fix">
+      <created>1534709453348</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1534709453348</updated>
+    </task>
+    <task id="LOCAL-00005" summary="some bug fix">
+      <created>1534709691490</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1534709691490</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65820000" />
+    <option name="totallyTimeSpent" value="67439000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -458,7 +472,7 @@
     <frame x="957" y="0" width="950" height="1046" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -473,7 +487,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32894737" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49786097" visible="true" weight="0.23903508" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49786097" visible="true" weight="0.23903508" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50213903" side_tool="true" weight="0.32127193" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32894737" />
       <window_info anchor="bottom" id="Spring" order="11" />
@@ -535,7 +549,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update some file [Processing]" />
     <MESSAGE value="for japanese" />
-    <option name="LAST_COMMIT_MESSAGE" value="for japanese" />
+    <MESSAGE value="some bug fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="some bug fix" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/EnglishTextParser.java" />
@@ -659,8 +674,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/src/main/java/SimpleWordSequenceLabelCSVParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="135" column="41" selection-start-line="135" selection-start-column="41" selection-end-line="135" selection-end-column="41" />
+        <state relative-caret-position="180">
+          <caret line="64" column="33" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
