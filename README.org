@@ -3,9 +3,13 @@
 
   Example of Recurrent Neural Network with Deeplearning4j.
 
+
 * Sample Figure
 
 
  [[./Diagram.png]]
  [[./Train.png]]
  [[./Example.png]]
+
+* memo
+ we should shuffle data because dataset.shuffle() is not perfection...

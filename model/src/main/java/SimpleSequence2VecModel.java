@@ -105,11 +105,12 @@ public class SimpleSequence2VecModel {
     }
 
     public void train() {
-        for (int epoch = 1; epoch < 300; ++epoch) {
+        for (int epoch = 1; epoch < 120; ++epoch) {
             System.out.println("Epoch :" + epoch);
             this.dataSetIterator.reset();
             while (this.dataSetIterator.hasNext()) {
                 DataSet trainData = this.dataSetIterator.next();
+                trainData.shuffle();
                 net.fit(trainData);
             }
         }
@@ -145,7 +146,7 @@ public class SimpleSequence2VecModel {
         BaseWordSequenceParser sequenceParser =
                 new SimpleWordSequenceLabelCSVParser(
                         new CSVLineSequenceRecordReader(1, ','),
-                        new SimpleEnglishTextParser(),
+                        new SimpleJapaneseTextParser(),
                         new FileSplit(new File("resources/question_source.csv")));
         sequenceParser.runAndSave(1, 2,
                 new File("resources/features.csv"),
@@ -174,20 +175,20 @@ public class SimpleSequence2VecModel {
                 labelSize);
 
         // Training Process --------------------------
-        // boolean showUI = false;
-        // System.out.println("Initialize model");
-        // model.setFeatureMaxLength(featureMaxLength);
-        // model.initNetWork(showUI);
-        // System.out.println("Initialize Finish");
+        boolean showUI = true;
+        System.out.println("Initialize model");
+        model.setFeatureMaxLength(featureMaxLength);
+        model.initNetWork(showUI);
+        System.out.println("Initialize Finish");
 
-        // System.out.println("Train model");
-        // model.train();
-        // System.out.println("Train Finish");
+        System.out.println("Train model");
+        model.train();
+        System.out.println("Train Finish");
 
         // Save Process -------------------------------
-        // System.out.println("Save Start");
-        // model.saveModel();
-        // System.out.println("Save Finish");
+        System.out.println("Save Start");
+        model.saveModel();
+        System.out.println("Save Finish");
 
         // Load Process -------------------------------
         System.out.println("load Model");
@@ -207,6 +208,7 @@ public class SimpleSequence2VecModel {
         while (true) {
             System.out.println("> [Exit : type \"QUIT\"]");
             String str = scanner.nextLine();
+            System.out.println("INPUT:" + str);
             if (str.toUpperCase().equals("QUIT")) return;
             double[] doubles =
                     sequenceParser

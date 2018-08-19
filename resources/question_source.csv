@@ -1,24 +1,28 @@
-index,text,answerId
-1,"What is your name ?",1
-2,"Who are you ?",1
-3,"What's your name ?",1
-4,"Can I ask your name ?",1
-5,"I didn't ask your name ?",1
-6,"May I have your name please ?",1
-7,"What do you like to do in your free time ?",2
-8,"What do you usually do for fun ?",2
-9,"How would you like to spend your spare time ?",2
-10,"Do you have any hobbies ?",2
-11,"What do you do in your free time ?",2
-12,"When is your birthday ?",3
-13,"What is your birf ?",3
-14,"Can I ask your birthday ?",3
-15,"What food do you like ?",4
-16,"What is your favorite food ?",4
-17,"What food is your favorite ?",4
-18,"What kind of food do you like ?",4
-19,"Is there anything you can't eat ?",5
-20,"Are there any foods that you dislike ?",5
-21,"Is there anything you prefer not to eat ?",5
-22,"Do you have any food that you don't like ?",5
-23,"what is your hobby ?",2
+index,text,answer
+1,"今日は何曜日ですか？",1
+2,"今日は何日ですか？",2
+3,"好きな食べ物はなんですか？",3
+4,"趣味はなんですか？",4
+5,"趣味はありますか？",4
+6,"嫌いな食べ物はなんですか？",5
+7,"何が好きですか？",3
+8,"嫌いなものはなんですか？",5
+9,"何が好きですか？",3
+25,"いつ生まれ？",7
+26,"生年月日は？",7
+27,"誕生日は？",7
+10,"趣味は何？",4
+11,"今日はいつ？",2
+12,"好きなことはなんですか",4
+13,"嫌いなものは何？",5
+14,"何曜日だっけ？",1
+16,"好きな食べ物は？",3
+17,"好きなことはなんですか？",4
+18,"名前はなんですか？",6
+19,"あなたの名前は？",6
+20,"名前を教えてください。",6
+21,"名前は何？",6
+22,"あなたはなんて言うの？",6
+23,"誕生日はいつですか？",7
+24,"生まれたのはいつ？",7
+15,"今日は何曜日？",1

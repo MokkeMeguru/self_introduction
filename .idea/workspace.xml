@@ -2,7 +2,81 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4e252f4-9b80-4dda-b806-1505c1ebf6df" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/SimpleJapaneseTextParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/igo-0.4.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ipadic/char.category" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ipadic/code2category" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ipadic/matrix.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ipadic/word.ary.idx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ipadic/word.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ipadic/word.inf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ipadic/word2id" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801.tar.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/AUTHORS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Adj.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Adnominal.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Adverb.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Auxil.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/COPYING" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/ChangeLog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Conjunction.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Filler.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/INSTALL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Interjection.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Makefile.am" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Makefile.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/NEWS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Noun.adjv.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Noun.adverbal.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Noun.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Noun.demonst.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Noun.nai.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Noun.name.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Noun.number.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Noun.org.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Noun.others.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Noun.place.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Noun.proper.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Noun.verbal.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Others.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Postp-col.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Postp.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Prefix.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/RESULT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Suffix.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Symbol.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/Verb.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/aclocal.m4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/char.def" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/config.guess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/config.sub" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/configure" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/configure.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/dicrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/feature.def" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/install-sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/left-id.def" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/matrix.def" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/missing" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/mkinstalldirs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/pos-id.def" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/rewrite.def" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/right-id.def" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mecab-ipadic-2.7.0-20070801/unk.def" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.org" beforeDir="false" afterPath="$PROJECT_DIR$/README.org" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/src/main/java/SimpleWordSequenceLabelCSVParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/SimpleWordSequenceLabelCSVParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/target/classes/Sequence2VecDataSetIteratorFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/data/target/classes/Sequence2VecDataSetIteratorFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/target/classes/SimpleWordSequenceLabelCSVParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/data/target/classes/SimpleWordSequenceLabelCSVParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/SimpleSequence2VecModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/SimpleSequence2VecModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/target/classes/SimpleSequence2VecModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/model/target/classes/SimpleSequence2VecModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/ComputationGraph.zip" beforeDir="false" afterPath="$PROJECT_DIR$/resources/ComputationGraph.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/answer_source.csv" beforeDir="false" afterPath="$PROJECT_DIR$/resources/answer_source.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/features.csv" beforeDir="false" afterPath="$PROJECT_DIR$/resources/features.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/label.csv" beforeDir="false" afterPath="$PROJECT_DIR$/resources/label.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/question_source.csv" beforeDir="false" afterPath="$PROJECT_DIR$/resources/question_source.csv" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,40 +99,41 @@
     <session id="1723973306">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.33" value="1" />
+          <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="bin" value="3" />
           <entry key="class" value="2" />
-          <entry key="csv" value="42" />
-          <entry key="java" value="38" />
-          <entry key="org" value="1" />
-          <entry key="xml" value="13" />
+          <entry key="csv" value="47" />
+          <entry key="java" value="42" />
+          <entry key="org" value="2" />
+          <entry key="xml" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="CSV" value="42" />
-          <entry key="JAVA" value="38" />
-          <entry key="PLAIN_TEXT" value="4" />
-          <entry key="XML" value="13" />
+          <entry key="CSV" value="47" />
+          <entry key="JAVA" value="42" />
+          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="XML" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="class" value="1" />
-          <entry key="csv" value="253" />
+          <entry key="csv" value="254" />
           <entry key="dummy" value="88" />
-          <entry key="java" value="14113" />
-          <entry key="org" value="68" />
+          <entry key="java" value="14761" />
+          <entry key="org" value="164" />
           <entry key="txt" value="42" />
           <entry key="xml" value="396" />
         </counts>
@@ -66,24 +141,29 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="CSV" value="253" />
-          <entry key="JAVA" value="14113" />
-          <entry key="PLAIN_TEXT" value="198" />
+          <entry key="CSV" value="254" />
+          <entry key="JAVA" value="14761" />
+          <entry key="PLAIN_TEXT" value="294" />
           <entry key="XML" value="396" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
       <usages-collector id="statistics.spring.boot.mvc.usages" />
       <usages-collector id="statistics.spring.boot.run.usages" />
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.create.new" value="1" />
+        </counts>
+      </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            <state relative-caret-position="216">
+              <caret line="15" column="8" selection-start-line="14" selection-end-line="17" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -91,82 +171,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="144">
               <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/model/src/main/java/SimpleSequence2VecModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="220" column="1" selection-start-line="220" selection-start-column="1" selection-end-line="220" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/src/main/java/SimpleWordSequenceLabelCSVParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="226" selection-start-line="226" selection-end-line="226" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/src/main/java/Sequence2VecDataSetIteratorFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/features.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="2" column="4" selection-start-line="2" selection-end-line="2" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="5" column="1" selection-start-line="4" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/src/main/java/SimpleEnglishTextParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="27" column="73" selection-start-line="27" selection-start-column="73" selection-end-line="27" selection-end-column="73" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#719#720#0" expanded="true" />
-                <element signature="e#761#762#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/src/main/java/BaseWordSequenceParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+            <state relative-caret-position="315">
+              <caret line="220" column="9" lean-forward="true" selection-start-line="220" selection-start-column="9" selection-end-line="220" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -190,10 +205,16 @@
       <find>nd</find>
       <find>featureMaxLe</find>
       <find>ma</find>
+      <find>sequenceParser</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -210,16 +231,17 @@
         <option value="$PROJECT_DIR$/data/src/main/java/SimpleFeatureCSVParser.java" />
         <option value="$PROJECT_DIR$/data/src/main/java/BaseTextParser.java" />
         <option value="$PROJECT_DIR$/data/src/main/java/SimpleWordSequenceCSVParser.java" />
-        <option value="$PROJECT_DIR$/resources/answer_source.csv" />
         <option value="$PROJECT_DIR$/data/pom.xml" />
         <option value="$PROJECT_DIR$/data/src/main/java/BaseWordSequenceParser.java" />
-        <option value="$PROJECT_DIR$/README.org" />
-        <option value="$PROJECT_DIR$/resources/question_source.csv" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/model/pom.xml" />
-        <option value="$PROJECT_DIR$/data/src/main/java/SimpleWordSequenceLabelCSVParser.java" />
         <option value="$PROJECT_DIR$/data/src/main/java/Sequence2VecDataSetIteratorFactory.java" />
+        <option value="$PROJECT_DIR$/data/src/main/java/SimpleJapaneseTextParser.java" />
+        <option value="$PROJECT_DIR$/resources/answer_source.csv" />
+        <option value="$PROJECT_DIR$/data/src/main/java/SimpleWordSequenceLabelCSVParser.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/SimpleSequence2VecModel.java" />
+        <option value="$PROJECT_DIR$/resources/question_source.csv" />
+        <option value="$PROJECT_DIR$/README.org" />
       </list>
     </option>
   </component>
@@ -236,7 +258,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="960" />
     <option name="height" value="1046" />
   </component>
@@ -246,6 +268,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -314,16 +338,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533895022646" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../self_introduction" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534696399676" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/igo-0.4.5.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="oudtdated.runtime.suppressed.plugin.version" value="1.2.51-release-IJ2018.2-1" />
@@ -363,6 +385,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SimpleJapaneseTextParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SimpleJapaneseTextParser" />
+      <module name="data" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SimpleSequence2VecModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SimpleSequence2VecModel" />
       <module name="model" />
@@ -381,11 +410,13 @@
       <item itemvalue="Application.SimpleEnglishTextParser" />
       <item itemvalue="Application.SimpleWordSequenceLabelCSVParser" />
       <item itemvalue="Application.SimpleSequence2VecModel" />
+      <item itemvalue="Application.SimpleJapaneseTextParser" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.SimpleSequence2VecModel" />
         <item itemvalue="Application.SimpleWordSequenceLabelCSVParser" />
+        <item itemvalue="Application.SimpleJapaneseTextParser" />
         <item itemvalue="Application.SimpleEnglishTextParser" />
       </list>
     </recent_temporary>
@@ -403,7 +434,8 @@
       <workItem from="1533662949904" duration="42992000" />
       <workItem from="1533837139674" duration="1346000" />
       <workItem from="1533846469101" duration="10150000" />
-      <workItem from="1534690151779" duration="23000" />
+      <workItem from="1534690151779" duration="4389000" />
+      <workItem from="1534727493112" duration="1285000" />
     </task>
     <task id="LOCAL-00001" summary="update some file [Processing]">
       <created>1533763871006</created>
@@ -423,7 +455,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54511000" />
+    <option name="totallyTimeSpent" value="60162000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -435,10 +467,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="960" height="1046" extended-state="4" />
+    <frame x="0" y="0" width="1920" height="1046" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10549451" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12780748" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -447,14 +479,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989011" weight="0.41557017" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989011" visible="true" weight="0.41557017" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32894737" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49862763" weight="0.32135308" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5013724" side_tool="true" weight="0.32969433" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49862763" weight="0.32127193" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5013724" side_tool="true" weight="0.32894737" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32894737" />
       <window_info anchor="bottom" id="Spring" order="11" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
@@ -518,13 +550,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/EnglishTextParser.java" />
-    <entry file="file://$PROJECT_DIR$/data/src/main/java/BaseTextParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/uiLog.bin">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -535,48 +560,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.org">
+    <entry file="file://$PROJECT_DIR$/data/src/main/java/BaseWordSequenceParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        <state relative-caret-position="360">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/question_source.csv">
+    <entry file="file://$PROJECT_DIR$/data/src/main/java/SimpleEnglishTextParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+        <state relative-caret-position="486">
+          <caret line="27" column="73" selection-start-line="27" selection-start-column="73" selection-end-line="27" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#719#720#0" expanded="true" />
+            <element signature="e#761#762#0" expanded="true" />
+            <element signature="e#821#822#0" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/answer_source.csv">
+    <entry file="file://$PROJECT_DIR$/data/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        <state relative-caret-position="288">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/label.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/data/src/main/java/SimpleJapaneseTextParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/src/main/java/SimpleSequence2VecModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="220" column="1" selection-start-line="220" selection-start-column="1" selection-end-line="220" selection-end-column="1" />
+        <state relative-caret-position="288">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -585,51 +600,81 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/src/main/java/SimpleWordSequenceLabelCSVParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="226" selection-start-line="226" selection-end-line="226" />
+        <state relative-caret-position="211">
+          <caret line="218" column="54" selection-start-line="218" selection-start-column="54" selection-end-line="218" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/src/main/java/Sequence2VecDataSetIteratorFactory.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="216">
+          <caret line="15" column="8" selection-start-line="14" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/answer_source.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/label.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/question_source.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.org">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="70" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/features.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="2" column="4" selection-start-line="2" selection-end-line="2" selection-end-column="7" />
+        <state relative-caret-position="36">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/pom.xml">
+    <entry file="file://$PROJECT_DIR$/data/src/main/java/BaseTextParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="5" column="1" selection-start-line="4" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="36">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/src/main/java/SimpleEnglishTextParser.java">
+    <entry file="file://$PROJECT_DIR$/data/src/main/java/Sequence2VecDataSetIteratorFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="27" column="73" selection-start-line="27" selection-start-column="73" selection-end-line="27" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#761#762#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="36">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/src/main/java/BaseWordSequenceParser.java">
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/SimpleSequence2VecModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        <state relative-caret-position="315">
+          <caret line="220" column="9" lean-forward="true" selection-start-line="220" selection-start-column="9" selection-end-line="220" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -657,7 +702,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.38045976" />
               </list>
             </option>
           </splitter-proportions>
@@ -680,7 +725,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.38045976" />
               </list>
             </option>
           </splitter-proportions>
@@ -688,12 +733,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>self_introduction</last-edited>
+          <last-edited>data</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.38045976" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -713,11 +757,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
+          <last-edited>lib</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.38045976" />
               </list>
             </option>
           </splitter-proportions>

@@ -216,7 +216,7 @@ public class SimpleWordSequenceLabelCSVParser implements BaseWordSequenceParser 
         BaseWordSequenceParser sequenceParser =
                 new SimpleWordSequenceLabelCSVParser(
                         new CSVLineSequenceRecordReader(1, ','),
-                        new SimpleEnglishTextParser(),
+                        new SimpleJapaneseTextParser(),
                         new FileSplit(new File("resources/question_source.csv")));
         sequenceParser.runAndSave(1,2,
                 new File("resources/features.csv"),
